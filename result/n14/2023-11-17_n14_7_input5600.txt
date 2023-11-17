@@ -1,0 +1,410 @@
+/usr/bin/bash benchmark.sh n14 7 input5600.txt
+1 ../homfa-runner/build/src/main generate-key --input-file ../homfa-runner/input-files/input5600.txt 1
++ eval ../homfa-runner/build/src/main generate-key --input-file ../homfa-runner/input-files/input5600.txt
+++ ../homfa-runner/build/src/main generate-key --input-file ../homfa-runner/input-files/input5600.txt
+5600
++ set +x
+
+
+
+
+separate block
+3 time ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7 1
++ eval time ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7
+++ ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7
+[2023-11-17 02:00:06.397] [info] top
+
+real	5m39.351s
+user	11m59.912s
+sys	0m26.408s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7 2
++ eval time ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7
+++ ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7
+[2023-11-17 02:05:25.890] [info] top
+
+real	5m19.491s
+user	11m44.536s
+sys	0m22.334s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7 3
++ eval time ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7
+++ ../homfa-runner/build/src/main separate --type=block --top-file ../homfa-runner/graph-config/two-dfa/n14/forward-top.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/forward-bottom.spec -p --block-size 7
+[2023-11-17 02:10:35.325] [info] top
+
+real	5m9.442s
+user	11m44.482s
+sys	0m23.714s
++ set +x
+
+
+
+
+torus-splitter block
+3 time ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7 1
++ eval time ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7
+++ ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7
+[2023-11-17 02:13:19.779] [info] top
+
+real	2m44.457s
+user	7m15.328s
+sys	0m15.213s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7 2
++ eval time ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7
+++ ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7
+[2023-11-17 02:16:03.885] [info] top
+
+real	2m44.101s
+user	7m18.022s
+sys	0m15.372s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7 3
++ eval time ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7
+++ ../homfa-runner/build/src/main torus-splitter --type=block --graph-file ../homfa-runner/graph-config/three-dfa/n14/forward.spec --block-size 7
+[2023-11-17 02:18:48.541] [info] top
+
+real	2m44.655s
+user	7m15.750s
+sys	0m15.491s
++ set +x
+
+
+
+
+separate reverse type1 bs300
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300 1
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300
+[2023-11-17 02:19:09.574] [info] 
+
+real	0m20.948s
+user	5m3.151s
+sys	0m8.606s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300 2
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300
+[2023-11-17 02:19:30.759] [info] 
+
+real	0m21.184s
+user	5m5.318s
+sys	0m10.889s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300 3
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300
+[2023-11-17 02:19:51.854] [info] 
+
+real	0m21.089s
+user	5m5.322s
+sys	0m8.540s
++ set +x
+
+
+
+
+separate reverse type1 bs300000
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000 1
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000
+[2023-11-17 02:20:03.130] [info] 
+
+real	0m11.261s
+user	2m6.361s
+sys	0m5.357s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000 2
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000
+[2023-11-17 02:20:14.193] [info] 
+
+real	0m11.095s
+user	2m3.481s
+sys	0m5.874s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000 3
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type1.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type1.spec -p -i 300000
+[2023-11-17 02:20:25.353] [info] 
+
+real	0m11.170s
+user	2m4.509s
+sys	0m5.440s
++ set +x
+
+
+
+
+torus-splitter reverse type1 bs300
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300 1
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300
+[2023-11-17 02:20:45.582] [info] 
+
+real	0m20.187s
+user	4m54.994s
+sys	0m14.149s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300 2
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300
+[2023-11-17 02:21:05.674] [info] 
+
+real	0m20.093s
+user	4m55.616s
+sys	0m10.777s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300 3
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300
+[2023-11-17 02:21:25.465] [info] 
+
+real	0m19.813s
+user	4m50.973s
+sys	0m10.425s
++ set +x
+
+
+
+
+torus-splitter reverse type1 bs300000
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000 1
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000
+[2023-11-17 02:21:35.764] [info] 
+
+real	0m10.261s
+user	1m53.397s
+sys	0m4.842s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000 2
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000
+[2023-11-17 02:21:45.917] [info] 
+
+real	0m10.178s
+user	1m51.113s
+sys	0m5.055s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000 3
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type1.spec -i 300000
+[2023-11-17 02:21:56.389] [info] 
+
+real	0m10.469s
+user	1m54.255s
+sys	0m5.322s
++ set +x
+
+
+
+
+separate reverse type2 bs300
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300 1
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300
+[2023-11-17 02:22:01.578] [info] 
+
+real	0m5.154s
+user	0m28.138s
+sys	0m6.164s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300 2
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300
+[2023-11-17 02:22:06.658] [info] 
+
+real	0m5.113s
+user	0m27.424s
+sys	0m6.320s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300 3
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300
+[2023-11-17 02:22:11.588] [info] 
+
+real	0m4.902s
+user	0m26.456s
+sys	0m5.612s
++ set +x
+
+
+
+
+separate reverse type2 bs300000
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000 1
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000
+[2023-11-17 02:22:15.130] [info] 
+
+real	0m3.554s
+user	0m17.181s
+sys	0m4.214s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000 2
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000
+[2023-11-17 02:22:18.713] [info] 
+
+real	0m3.551s
+user	0m17.268s
+sys	0m4.146s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000 3
++ eval time ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000
+++ ../homfa-runner/build/src/main separate --type=reverse --top-file ../homfa-runner/graph-config/two-dfa/n14/reverse-top-type2.spec --bottom-file ../homfa-runner/graph-config/two-dfa/n14/reverse-bottom-type2.spec -p -i 300000
+[2023-11-17 02:22:22.278] [info] 
+
+real	0m3.562s
+user	0m17.117s
+sys	0m4.041s
++ set +x
+
+
+
+
+torus-splitter reverse type2 bs300
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300 1
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300
+[2023-11-17 02:22:26.369] [info] 
+
+real	0m4.092s
+user	0m17.406s
+sys	0m4.785s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300 2
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300
+[2023-11-17 02:22:30.464] [info] 
+
+real	0m4.126s
+user	0m17.173s
+sys	0m4.731s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300 3
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300
+[2023-11-17 02:22:34.463] [info] 
+
+real	0m3.992s
+user	0m17.277s
+sys	0m4.485s
++ set +x
+
+
+
+
+torus-splitter reverse type2 bs300000
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000 1
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000
+[2023-11-17 02:22:37.905] [info] 
+
+real	0m3.439s
+user	0m15.137s
+sys	0m4.744s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000 2
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000
+[2023-11-17 02:22:41.273] [info] 
+
+real	0m3.377s
+user	0m14.931s
+sys	0m4.581s
++ set +x
+
+
+
+
+3 time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000 3
++ eval time ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000
+++ ../homfa-runner/build/src/main torus-splitter --type=reverse --graph-file ../homfa-runner/graph-config/three-dfa/n14/reverse-type2.spec -i 300000
+[2023-11-17 02:22:44.714] [info] 
+
+real	0m3.394s
+user	0m15.269s
+sys	0m4.452s
++ set +x
+
+
+
+
